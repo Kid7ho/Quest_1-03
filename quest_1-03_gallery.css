@@ -1,0 +1,193 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Verdana";
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+header .inner_box {
+  width: 1180px; height: 120px;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+header .inner_box > h1.logo {
+  position: absolute;
+  left: 10px; bottom: 15px;
+
+  color: #444444;
+  font-weight: bold;
+}
+header .inner_box > h1.logo:hover a {
+  color: black;
+}
+
+header .inner_box > ul.global {
+  position: absolute;
+  right: 0px; bottom: 0px;
+  margin-bottom: 15px;
+
+  color: #707070;
+  font-weight: bold;
+}
+header .inner_box > ul.global li {
+  display: inline;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  font-size: 15px;
+}
+header .inner_box > ul.global li:hover {
+  text-decoration: underline;
+}
+header .inner_box > ul.global li:hover a {
+  color: red;
+}
+
+header .inner_box > ul.utility {
+  position: absolute;
+  right: 30px; top: 20px;
+
+  color: gray;
+  font-size: 13px;
+}
+header .inner_box > ul.utility li {
+  display: inline;
+  margin-left: 10px;
+}
+header .inner_box > ul.utility li:hover {
+  text-decoration: underline;
+}
+header .inner_box > ul.utility li:hover a {
+  color: red;
+}
+
+
+section {
+  width: 1000px;
+  position: relative;
+  margin: 0px auto;
+  top: 120px;
+
+  overflow: scroll;
+}
+section article {
+  float: left;
+  position: relative;
+  margin-top: 10px;
+  color: white;
+}
+section article p {
+  position: absolute;
+}
+
+section article.article1 {
+  width: 700px; height: 400px;
+  margin-right: 5px;
+  background-image: url(700x400.png);
+}
+section article.article1 p {
+  font-size: 30px;
+  right: 10px; bottom: 10px;
+}
+
+section article.article2 {
+  width: 290px; height: 190px;
+  margin-left: 5px;
+  background-image: url(290x190.png);
+}
+section article.article2 p {
+  top: 50px; left: 10px;
+}
+
+section article.article3 {
+  width: 290px; height: 95px;
+  margin-left: 5px;
+  background-image: url(290x95-1.png);
+}
+section article.article3:nth-child(4) {
+  background-image: url(290x95-2.png);
+}
+section article.article3 p {
+  right: 10px; bottom: 20px;
+}
+
+section article.article4 {
+  width: 490px; height: 240px;
+  margin-right: 5px;
+  background-image: url(490x240-1.png);
+}
+section article.article4:nth-child(7) {
+  background-image: url(490x240-2.png);
+}
+section article.article4:nth-child(5) p {
+  width: 300px;
+  left: 95px; top: 160px;
+
+  color: black;
+}
+section article.article4:nth-child(7) p {
+  right: 20px; bottom: 30px;
+
+  font-size: 30px; color: gold;
+}
+
+section article.article5::after {
+  content: "";
+  float: left;
+}
+
+
+section article.article5 {
+  width: 500px; height: 490px;
+  margin-left: 5px;
+  float: right;
+  background-image: url(500x490.png);
+}
+
+
+section article.article6 {
+  width: 1000px; height: 371px;
+  background-image: url(1000x371.png);
+
+  justify-content: middle;
+}
+section article.article6 p {
+  width: 100%;
+  top: 50%; transform: translateY(-50%);
+
+  font-size: 50px; font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+section article.article7 {
+  width: 1000px; height: 361px;
+  margin-bottom: 50px;
+  background-image: url(1000x361.png);
+}
+section article.article7 p {
+  width: 450px; height: 150px;
+  right: 30px; bottom: 40px;
+
+  font-size: 20px;
+}
+section article.article7 p span {
+  font-size: 30px; font-weight: bold;
+}

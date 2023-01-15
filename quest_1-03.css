@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Verdana";
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+
+header {
+  width: 100%;
+
+  border-bottom: 1px solid black;
+}
+header .inner_box {
+  width: 1180px; height: 120px;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+header .inner_box > h1.logo {
+  position: absolute;
+  left: 10px; bottom: 15px;
+
+  color: #444444;
+  font-weight: bold;
+}
+header .inner_box > h1.logo:hover a {
+  color: black;
+}
+
+header .inner_box > ul.global {
+  position: absolute;
+  right: 0px; bottom: 0px;
+  margin-bottom: 15px;
+
+  color: #707070;
+  font-weight: bold;
+}
+header .inner_box > ul.global li {
+  display: inline;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  font-size: 15px;
+}
+header .inner_box > ul.global li:hover {
+  text-decoration: underline;
+}
+header .inner_box > ul.global li:hover a {
+  color: red;
+}
+
+header .inner_box > ul.utility {
+  position: absolute;
+  right: 30px; top: 20px;
+
+  color: gray;
+  font-size: 13px;
+}
+header .inner_box > ul.utility li {
+  display: inline;
+  margin-left: 10px;
+}
+header .inner_box > ul.utility li:hover {
+  text-decoration: underline;
+}
+header .inner_box > ul.utility li:hover a {
+  color: red;
+}
+
+
+.main {
+  width: 100%; height: 590px;
+  overflow: hidden;
+  background-image: url(bg_main.png);
+}
+.main .inner_box {
+  width: 800px; height: 300px;
+  margin: 0px auto;
+  overflow: hidden;
+
+  margin-top: 150px;
+}
+.main .inner_box .title {
+  font-size: 80px;
+  color: white;
+}
+.main .inner_box .detail {
+  font-size: 25px;
+  color: white;
+}
+
+
+section {
+  width: 1180px; height: 450px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+section p.title {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+section article {
+  width: 230px;
+  float: left;
+
+  margin-left: 32.5px;
+  margin-right: 32.5px;
+  overflow: hidden;
+}
+section article img {
+  width: 230px; height: 163px;
+}
+section article p:nth-child(2) {
+  font-weight: bold;
+
+  line-height: 200%;
+}
+
+
+
+footer {
+  width: 100%;
+
+  background-color: #282434;
+}
+footer .inner_box {
+  width: 1000px; height: 100px;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+
+  color: gray;
+}
+footer .inner_box > h1.logo {
+  position: absolute;
+  left: 10px; bottom: 15px;
+
+  font-weight: bold;
+}
+footer .inner_box > ul.menu {
+  position: absolute;
+  right: 20px; bottom: 15px;
+}
+footer .inner_box > ul.menu li {
+  display: inline;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  font-size: 13px;
+}
+footer .inner_box > ul.menu li:hover {
+  text-decoration: underline;
+}
+footer .inner_box > ul.menu li:hover a {
+  color: red;
+}
+footer .info {
+  width: 1000px; height: 120px;
+  margin: 0px auto;
+  overflow: hidden;
+
+  color: gray;
+  font-size: 12px;
+  line-height: 175%;
+}
